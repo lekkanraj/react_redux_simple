@@ -9,13 +9,10 @@ import {Provider} from 'react-redux';
 //import logger from 'redux-logger';
 import store from './store';
 
-
-
-
 /* store.subscribe(()=>{
-    //console.log("Updated", store.getState());
-})
-
+    console.log("Updated", store.getState());
+}) */
+/* 
 store.dispatch({
     type:"ADD",
     payload:10
@@ -37,9 +34,8 @@ store.dispatch({
 }); */
 
 ReactDOM.render(
-<Provider store={store} >
-<App />
-</Provider>
-
+    <Provider store={store} >
+    <App />
+    </Provider>
 , document.getElementById('root'));
 registerServiceWorker();

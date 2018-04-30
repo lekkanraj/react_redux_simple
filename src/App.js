@@ -89,7 +89,7 @@ export class WelcomeContent extends Component{
     console.log(this.state.firstname);
     return(
     <h1>Hi {localStorage.getItem("firstname") !='' ?
-           (<span className="text-success">{localStorage.getItem("firstname")}</span>) : ("Guest")} {this.props.disname +" "+this.props.disage}</h1>
+           (<span className="text-success">{localStorage.getItem("firstname")}</span>) : ("Guest")} </h1>
     );
   }
 }
